@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(190, 165, 165);
+}
 .container {
     width: 650px;
     height: 100vh;
@@ -29,6 +32,11 @@
     padding: 10px;
     margin: 10px;
     border-radius: 10px 10px 0 0;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 70px;
 }
 
 .numbers-portal {
@@ -36,11 +44,27 @@
     height: 550px;
     background-color: black;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px 10px 0 0;
+}
+
+.colone{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: fl;
+    width: 350px;
+    gap: 10px;
+}
+
+.coltwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 button {
@@ -51,5 +75,33 @@ button {
     border-radius: 20px;
     margin: 5px;
     color: white;
+    -webkit-box-shadow: -8px -7px 5px -9px rgba(255,255,255,1);
+    -moz-box-shadow: -8px -7px 5px -9px rgba(255,255,255,1);
+    box-shadow: -8px -7px 5px -9px rgba(255,255,255,1);
     
+}
+
+button[value] {
+    font-size: 30px;
+}
+
+button:hover{
+    background-color: rgb(56, 56, 56);
+}
+
+button.operator {
+    width: 75px;    
+    height: 75px;
+    background-color: rgb(71, 70, 70);    
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+button.operator.equal {
+    background-color: orange;
+}
+
+button.operator.del {
+    background-color: red;
 }

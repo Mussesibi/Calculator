@@ -5,6 +5,23 @@ let currentInput = ""
 let currentOperator = ""
 let storedValue = 0 
 
+document.addEventListener('DOMContentLoaded',animateText)
+
+function animateText(){
+    const Text = "Hello..."
+    let currentIndex = 0
+    const intervalId = setInterval(()=>{
+        if(currentIndex <= Text.length){    
+        const dsiplayedText = Text.slice(0,currentIndex)
+        display.style.cssText = "color: gray; font-family:'Courier New', Courier, monospace;"
+        display.textContent = dsiplayedText
+        currentIndex++
+    }else{
+        clearInterval(intervalId)
+    }
+        
+    },300)
+}
 buttons.forEach(btn => {
     btn.addEventListener('click', ()=>{
 

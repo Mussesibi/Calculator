@@ -98,10 +98,28 @@ button.operator {
     margin-bottom: 20px;
 }
 
+button.operator:hover {
+    background-color: rgb(56, 56, 56);
+}
+
 button.operator.equal {
     background-color: orange;
 }
 
+button.operator.equal:hover {
+    background-color: rgb(218, 142, 2);
+}
+
 button.operator.del {
     background-color: red;
+}
+
+button.operator.del:hover {
+    background-color: rgb(219, 2, 2);
+}
+
+.active {
+    -webkit-box-shadow: inset -8px -7px 5px -9px rgba(255,255,255,1);
+        -moz-box-shadow: inset -8px -7px 5px -9px rgba(255,255,255,1);
+        box-shadow: inset -8px -7px 5px -9px rgba(255,255,255,1);
 }

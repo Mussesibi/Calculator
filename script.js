@@ -66,6 +66,7 @@ function mul(a, b){
 }
 function divide(a, b){
     if (b === 0) {
+        display.style.fontSize = "3em"
         return display.textContent = "You naughty boy ;)"
     }else{
 

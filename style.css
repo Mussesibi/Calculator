@@ -106,11 +106,11 @@ button.operator:hover {
 }
 
 button.operator.equal {
-    background-color: orange;
+    background-color: green;
 }
 
 button.operator.equal:hover {
-    background-color: rgb(218, 142, 2);
+    background-color: rgb(112, 188, 118);
 }
 
 button.operator.del {

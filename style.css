@@ -106,11 +106,11 @@ button.operator:hover {
 }
 
 button.operator.equal {
-    background-color: green;
+    background-color: rgb(255, 183, 0);
 }
 
 button.operator.equal:hover {
-    background-color: rgb(112, 188, 118);
+    background-color: rgb(164, 180, 94);
 }
 
 button.operator.del {
@@ -129,6 +129,7 @@ button.operator.del:hover {
 
 footer{
     font-size: 30px;
+    margin-top: 15rem;
     margin-bottom: 35px;
     font-family: 'Courier New', Courier, monospace;
 }
